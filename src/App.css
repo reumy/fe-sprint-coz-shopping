@@ -1,0 +1,167 @@
+* { 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 76px;
+  box-shadow: 0 0 5px #ddd;
+  position: sticky;
+  background-color: white;
+}
+
+.header_left ul {
+  display: flex;
+}
+
+.header_left ul li {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.header_right .menu:hover {
+  cursor: pointer;
+}
+
+.header_right .menu {
+  position: relative;
+}
+
+.header_right .menu .menu_modal {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #ddd;
+  width:200px;
+  height: 150px;
+  margin-top:20px;
+  position: absolute;
+  right: -26px;
+  background-color: white;
+  display: none;
+}
+
+.header_right .menu .menu_modal.open {
+  display: block;
+}
+
+.header_right .menu .menu_modal li {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.header_right .menu .menu_modal li:first-child:hover {
+  cursor: default;
+}
+
+.header_right .menu .menu_modal li:last-child {
+  border: none;
+}
+
+.header_right .menu .menu_modal li img {
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+.header_right .menu .menu_modal li a {
+  color: black;
+}
+
+footer {
+  height: 58px;
+  background-color: white;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #9d9d9d;
+  font-size: 12px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  margin-right: 7px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #9d9d9d;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+main .contents {
+  display: flex;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.product {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.product li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .bold {
+  font-weight: bold;
+}
+
+.product .purple {
+  color: rgb(98, 43, 226);
+}
+
+.product .right {
+  flex-direction: row-reverse;
+}
+
+.product .img {
+  position: relative;
+}
+
+.product .listImg img {
+  width: 264px;
+  height: 210px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product .star {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
